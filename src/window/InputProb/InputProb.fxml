@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane maxHeight="490.0" maxWidth="800.0" minHeight="490.0" minWidth="420.0" prefHeight="490.0" prefWidth="782.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="window.InputProb.Controller">
+   <children>
+      <Group fx:id="displayGroup" layoutX="75.0" layoutY="110.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bfcdda" height="270.0" stroke="BLACK" strokeType="INSIDE" width="270.0" />
+
+      
+      
+             <GridPane fx:id="inputGrid">
+               <columnConstraints>
+                  <ColumnConstraints />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints />
+               </rowConstraints></GridPane>
+         </children></Group>
+      <HBox layoutX="110.0" layoutY="422.0" maxWidth="200.0" minWidth="200.0" prefHeight="45.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" onMouseClicked="#onClickSolve" prefHeight="45.0" prefWidth="81.0" style="-fx-font-size: 15;" text="Solve It !" />
+            <Pane prefHeight="25.0" prefWidth="51.0" visible="false" />
+          <Button mnemonicParsing="false" onMouseClicked="#onClickResetButton" prefHeight="45.0" prefWidth="81.0" style="-fx-font-size: 15;" text="Reset" />
+         </children>
+      </HBox>
+      <Group fx:id="outputGroup" layoutX="457.0" layoutY="110.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bfcdda" height="270.0" stroke="BLACK" strokeType="INSIDE" width="270.0" />
+            <GridPane fx:id="outputGrid">
+               <columnConstraints>
+                  <ColumnConstraints />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints />
+               </rowConstraints>
+            </GridPane>
+         </children>
+      </Group>
+      <Label fx:id="messageLabel" layoutX="75.0" layoutY="392.0" text="Fill numbers" />
+
+   </children>
+</AnchorPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<?import java.util.ArrayList?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LabelList.LabelListTest">
+   <children>
+      <VBox layoutX="121.0" layoutY="68.0" prefHeight="200.0" prefWidth="100.0">
+         <children>
+             <Label fx:id="label0" text="Label" />
+             <Label fx:id="label1" text="Label" />
+             <Label fx:id="label2" text="Label" />
+             <Label fx:id="label3" text="Label" />
+             <Label fx:id="label4" text="Label" />
+             <Label fx:id="label5" text="Label" />
+             <Label fx:id="label6" text="Label" />
+             <Label fx:id="label7" text="Label" />
+             <Label fx:id="label8" text="Label" />
+
+             <fx:define>
+                 <ArrayList fx:id="labelList">
+                     <fx:reference source="label0" />
+                     <fx:reference source="label1" />
+                     <fx:reference source="label2" />
+                     <fx:reference source="label3" />
+                     <fx:reference source="label4" />
+                     <fx:reference source="label5" />
+                     <fx:reference source="label6" />
+                     <fx:reference source="label7" />
+                     <fx:reference source="label8" />
+                 </ArrayList>
+
+             </fx:define>
+
+         </children>
+      </VBox>
+
+   </children>
+
+</AnchorPane>
